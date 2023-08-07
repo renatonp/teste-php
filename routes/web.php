@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Route::get('/prepareNewDocument','DocumentController@prepareNewDocument')->name('prepareNewDocument');
 Route::post('/addData','DocumentController@addData')->name('addData');
-Route::post('/generatePDF','DocumentController@generatePDF')->name('generatePDF');
+Route::post('/generatePDF','DocumentController@generatePDF')->name('generatePDF'); 
