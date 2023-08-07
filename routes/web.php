@@ -12,11 +12,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/prepareNewDocument','DocumentController@prepareNewDocument')->name('prepareNewDocument');
 Route::post('/addData','DocumentController@addData')->name('addData');
 Route::post('/generatePDF','DocumentController@generatePDF')->name('generatePDF'); 
